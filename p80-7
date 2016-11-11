@@ -1,0 +1,40 @@
+//p80 -7
+#include <iostream>
+using namespace std;
+int main()
+{
+	int cost, kilo,length, root;
+	loop:
+	cin >> kilo >>length;
+	if (kilo <= 15)
+	{
+		cout << "5" << endl;
+		goto loop;
+	}
+	else if (kilo <= 30)
+	{
+		cout << "9" << endl;
+		goto loop;
+	}
+	else if (kilo <= 45)
+	{
+		cout << "12" << endl;
+		goto loop;
+	}
+	else if (kilo <= 60)
+	{
+		length =(length-(length % 1000))/1000;
+		cost = 14 + length;
+		cout << cost << endl;
+		goto loop;
+	}
+	else
+	{
+		length = (length - (length % 1000)) / 1000;
+		cost = 15 + length * 2;
+		cout << cost << endl;
+		goto loop;
+
+	}
+	    
+}
