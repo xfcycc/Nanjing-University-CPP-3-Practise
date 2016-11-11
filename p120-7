@@ -1,0 +1,26 @@
+//p120-7
+#include <iostream>
+using namespace std;
+int fib(int n,int k)
+{
+	int h;
+	for (int i = 1; i <= k; i++)
+	{
+		h = n % 10;
+		n = n / 10;
+	}
+
+	return h;
+		
+	
+	
+}
+int main()
+{
+	int m, r,n;
+	loop:
+	cin >> m >> n;
+	r = fib(m,n);
+	cout << r << endl;
+	goto loop;
+}
