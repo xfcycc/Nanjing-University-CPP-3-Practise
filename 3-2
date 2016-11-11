@@ -1,0 +1,16 @@
+//计算a+2a+3a+...的前n项和
+// sum=(1+n)n/2*a
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n;
+	double a, sum;
+	cout << "a = ";
+	cin >> a;
+	cout << "n = ";
+	cin >> n;
+	sum = (1+n)*n /2*a;
+	cout << "sum = " << sum << endl;
+	return 0;
+
