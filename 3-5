@@ -1,0 +1,21 @@
+
+//3-4
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int a, b, c;
+	cout << "请输入三边长: " << endl;
+	cin >> a >> b >> c;
+	if (a + b <= c || b + c <= a || c + a <= b)
+		cout << "不是三角形" << endl;
+	else if (a == b && b == c)//这里写成a == b == c就不一样了
+		cout << "等边三角形" << endl;
+	else if (a == b || b == c || c == a)
+		cout << "等腰三角形" << endl;
+	else if (a*a + b*b == c*c || b*b + c*c == a*a || c*c + a*a == b*b)
+		cout << "直角三角形" << endl;
+	else
+		cout << "一般三角形" << endl;
+}
