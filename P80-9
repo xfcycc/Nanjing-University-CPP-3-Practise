@@ -1,0 +1,17 @@
+//P80-9
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, c ,i;
+	for (i = 100; i <= 999; i++)
+	{
+		a = (i - (i % 100))/100;
+		c = i % 10;
+		b = ((i - 100 * a) - (i - 100 * a) % 10) / 10;
+			if (i == a*a*a + b*b*b + c*c*c)
+				cout << i << endl;
+	
+	}
+
+}
