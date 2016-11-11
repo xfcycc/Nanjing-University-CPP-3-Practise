@@ -1,0 +1,21 @@
+//p80-10
+#include <iostream>
+using namespace std;
+	int main()
+{
+	int a, b, root,max,i;
+	loop:
+	cin >> a >> b;
+	root = (a <= b) ? a : b;
+	for (i = 1; i <= root; i++)
+	{
+		if (a%i == 0 && b%i == 0)
+			max = i;
+
+	}
+	cout << max << endl;
+	goto loop;
+
+
+
+}
