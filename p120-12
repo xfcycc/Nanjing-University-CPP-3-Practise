@@ -1,0 +1,27 @@
+//p120-12
+#include <iostream>
+int f(int n)
+{
+	if (n == 2)
+		return 1;
+	else
+	{
+		n -= 2;
+		int h = 1;
+		for (n; n > 0; n--)
+			h *= n;
+		return h + 1;
+	}
+
+}
+int main()
+{
+	int a;
+	loop:
+	std::cin >> a;
+	int m = f(a);
+	std::cout << m << std::endl;
+	goto loop;
+
+}
+
