@@ -1,0 +1,15 @@
+//求阶乘的递归函数
+#include<iostream>
+int f(int n)
+	{
+		if (n == 0)
+			return 1;
+		else
+			return n * f(n - 1);
+	}
+int main()
+{
+	int n;
+	std::cin >> n;
+	std::cout << f(n);
+}
